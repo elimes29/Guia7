@@ -22,38 +22,26 @@ public class Ejercicio10 {
         
         System.out.println("Ingrese un primer número entre 0 y 20");
         int n1 = leer.nextInt();
-        while (n1<0 || n1>20){
-            System.out.println("NÚMERO ERRONEO");
-            System.out.println("Ingrese un primer número entre 0 y 20");
-            n1 = leer.nextInt();
-        }
-        
+        n1=valor(n1);
+               
         System.out.println("Ingrese un segundo número entre 0 y 20");
         int n2 = leer.nextInt();
-        while (n2<0 || n2>20){
-            System.out.println("NÚMERO ERRONEO");
-            System.out.println("Ingrese un segundo número entre 0 y 20");
-            n2 = leer.nextInt();
-        }
+        n2=valor(n2);
         
         System.out.println("Ingrese un tercer número entre 0 y 20");
         int n3 = leer.nextInt();
-        while (n3<0 || n3>20){
-            System.out.println("NÚMERO ERRONEO");
-            System.out.println("Ingrese un tercer número entre 0 y 20");
-            n3 = leer.nextInt();
-        }
+        n3=valor(n3);
         
         System.out.println("Ingrese un cuarto número entre 0 y 20");
         int n4 = leer.nextInt();
-        while (n4<0 || n4>20){
-            System.out.println("NÚMERO ERRONEO");
-            System.out.println("Ingrese un cuarto número entre 0 y 20");
-            n4 = leer.nextInt();
-        }
+        n4=valor(n4);
+        
         System.out.println("---------------------");
-        
-        
+        imprime(n1);
+        imprime(n2);
+        imprime(n3);
+        imprime(n4);
+        /*
         System.out.print(n1 + " " );
         for (int i = 0; i < n1; i++) {
             System.out.print("*");
@@ -77,6 +65,26 @@ public class Ejercicio10 {
             System.out.print("*");
         }
         System.out.println("");
+*/
+    }
+    //funcion para asguara qe los datos que enran sean entre 0 y 20
+    public static int valor(int num){
+        Scanner leer = new Scanner(System.in);
+        
+        while (num<0 || num>20){
+            System.out.println("NÚMERO ERRONEO");
+            System.out.println("Ingrese un número entre 0 y 20");
+            num = leer.nextInt();
+        }
+        return num;
     }
     
+    //procedimeinto que imprime en pantalla
+    public static void imprime(int n){
+        System.out.print(n + " " );
+        for (int i = 0; i < n; i++) {
+            System.out.print("*");
+    }
+        System.out.println("");
+    }
 }
