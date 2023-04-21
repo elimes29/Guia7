@@ -22,8 +22,10 @@ public class EjercicioA9 {
          Scanner leer = new Scanner(System.in);
         System.out.println("Ingrese una frase");
         String a=leer.nextLine();
+        String b;
+        b = a.substring(0,1);
         
-        if (a.charAt(0)=='A'){
+        if (b.equals("A")){
         //if (a.charAt(0).equals('A')){    
              System.out.println("Correcto");
         }else{

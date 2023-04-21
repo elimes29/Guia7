@@ -19,11 +19,11 @@ public class EjercicioA15 {
         for (int i = 0; i < 100; i++) {
             vector[i] = i + 1;
         }
-        /*
+        
          for (int i = 0; i < 100; i++) {
-             System.out.println(vector[i]);            
+             System.out.println(vector[100-i-1]);            
         }       
-         */
+         
     }
 
 }

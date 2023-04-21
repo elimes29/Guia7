@@ -31,9 +31,9 @@ public class EjercicoA12 {
         int contBuenas=0;
         int contMalas=0;
         while (!(cadena.equals("&&&&&"))){
-            if (cadena.length()!=5){
+            if (cadena.length()>5){
                 contMalas++;
-            }else if((cadena.charAt(0)=='X') && (cadena.charAt(4)=='O')){
+            }else if((cadena.startsWith("X")) && (cadena.endsWith("O"))){
                 contBuenas++;
             }else{
                 contMalas++;                    
@@ -42,7 +42,7 @@ public class EjercicoA12 {
         cadena=leer.nextLine();
         }
         System.out.println("Ingresos malos "+contMalas+" que es el "+((float) 100*contMalas/(contMalas+contBuenas))+"%");
-        System.out.println("Ingresos Buenos "+contBuenas+" que es el "+((float) 100*contMalas/(contBuenas+contBuenas))+"%");
+        System.out.println("Ingresos Buenos "+contBuenas+" que es el "+((float) 100*contBuenas/(contMalas+contBuenas))+"%");
         
     }
     
