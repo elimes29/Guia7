@@ -41,7 +41,52 @@ public class EjercicioA20 {
             System.out.println("");
         }
         */
-        //Sumando filas
+        int fila0=0;
+        int fila1=0;
+        int fila2=0;
+        int col0=0;
+        int col1=0;
+        int col2=0;
+        int diagPrin=0;
+        int diagSecu=0;
+        //Sumando filas, colunas
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                if (i==0){ //fila 0
+                    fila0=fila0+A[i][j];
+                }
+                if (i==1){ //fila 1
+                    fila1=fila1+A[i][j];
+                }
+                if (i==2){ //fila 2
+                    fila2=fila2+A[i][j];
+                }
+                if (j==0){ //colunma 0
+                    col0=col0+A[i][j];
+                }
+                if (j==1){ //colunma 1
+                    col1=col1+A[i][j];
+                }
+                if (j==2){ //colunma 2
+                    col2=col2+A[i][j];
+                }
+                if (j==i){ //diagonal principal 0
+                    diagPrin=diagPrin+A[i][j];
+                }
+                if (i+j==3-1){ //diaonal secundaria
+                    diagSecu=diagSecu+A[i][j];
+                }
+                
+            }
+            
+        }
+        if ((fila1==fila0) && (fila1==fila0) && (fila2==fila0) && (col1==fila0) && (diagPrin==fila0) && (diagSecu==fila0)){
+            System.out.println("Este cuadrado es Mágico");
+        
+    } else{
+            System.out.println("Este cuadrado NO Mágico");
+        }
+        //System.out.println(col0+" "+col1+" "+col2+" "+fila1+" "+fila2+" "+fila0+" "+diagPrin+" "+diagSecu);
     }
     
 }
