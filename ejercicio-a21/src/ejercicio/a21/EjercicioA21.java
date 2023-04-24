@@ -38,17 +38,16 @@ public class EjercicioA21 {
             }
             System.out.println("");
         }
-        
+        //Solicitando matriz p a comparar
         System.out.println("-----------------------------------");
         System.out.println("Ingrese numero:");
         Scanner leer=  new Scanner(System.in);
         for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                               
+            for (int j = 0; j < 3; j++) {      
                 p[i][j] = leer.nextInt();
             }
         }
-        
+        //Mostrando matriaz a compaprar
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
                 System.out.print("[" + p[i][j] + "]  ");
@@ -64,6 +63,7 @@ public class EjercicioA21 {
        int x=0,y=0;
         do {
             contSub++;
+            //Creando submatrices subM
             y=0;
             for (int i = subI; i < subI+3; i++) {
                 x=0;
@@ -73,6 +73,7 @@ public class EjercicioA21 {
                 }
                 y++;
             }
+            //Comparando subM con p con Arrays.deepEquals(Matriz1,Matriz2)
             if (Arrays.deepEquals(subM,p)) {
                 System.out.println("Matriz contenida en fila: "+subI+"  columna: "+subJ);
                igual=false;
