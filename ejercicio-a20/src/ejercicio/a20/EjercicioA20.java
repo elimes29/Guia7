@@ -80,7 +80,7 @@ public class EjercicioA20 {
             }
             
         }
-        if ((fila1==fila0) && (fila1==fila0) && (fila2==fila0) && (col1==fila0) && (diagPrin==fila0) && (diagSecu==fila0)){
+        if ((fila1==fila0) && (col1==fila0) && (fila2==fila0) && (col2==fila0) && (col3==fila0) && (diagPrin==fila0) && (diagSecu==fila0)){
             System.out.println("Este cuadrado es Mágico");
         
     } else{

@@ -26,12 +26,13 @@ public class EjercicioA21 {
         int[][] p = new int[3][3];
         int[][] subM=new int[3][3];
 
+        //llenando matriz 10x10
         for (int i = 0; i < 10; i++) {
             for (int j = 0; j < 10; j++) {
                 m[i][j] = (int) (Math.random() * 100);
             }
         }
-
+        //Imprimiendo matriz 10x10
         for (int i = 0; i < 10; i++) {
             for (int j = 0; j < 10; j++) {
                 System.out.print("[" + m[i][j] + "]  ");
@@ -47,7 +48,7 @@ public class EjercicioA21 {
                 p[i][j] = leer.nextInt();
             }
         }
-        //Mostrando matriaz a compaprar
+        //Mostrando matriz a compaprar
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
                 System.out.print("[" + p[i][j] + "]  ");
