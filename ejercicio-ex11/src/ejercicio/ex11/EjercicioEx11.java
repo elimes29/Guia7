@@ -1,4 +1,5 @@
 /*
+10
 Realice un programa para que el usuario adivine el resultado de una multiplicación entre
 dos números generados aleatoriamente entre 0 y 10. El programa debe indicar al usuario
 si su respuesta es o no correcta. En caso que la respuesta sea incorrecta se debe permitir

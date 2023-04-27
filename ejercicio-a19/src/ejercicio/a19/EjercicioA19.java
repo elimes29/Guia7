@@ -16,30 +16,28 @@ public class EjercicioA19 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int n=10;
-        int[] v1=new int[n];
-        int[] v2=new int[n];
-        int cont=0;
+        int n = 10;
+        int[] v1 = new int[n];
+        int[] v2 = new int[n];
+        int cont = 0;
         for (int i = 0; i < n; i++) {
-            v1[i]=v2[i]=(int) (Math.random()*10);
+            v1[i] = v2[i] = (int) (Math.random() * 10);
             //v1[i]=(int) (Math.random()*10);
             //v2[i]=(int) (Math.random()*10);
         }
         for (int i = 0; i < n; i++) {
-            if (v2[i]==v1[i]){
+            if (v2[i] == v1[i]) {
                 cont++;
-            }else{
+            } else {
                 break;
             }
-            if (cont==n){
-                System.out.println("Son iguales");
+        }
+        if (cont == n) {
+            System.out.println("Son iguales");
+        } else {
+            System.out.println("No son iguales");
+        }
 
-            }
-              
-            }
-        System.out.println(cont);
-                
-            
     }
-    
+
 }
